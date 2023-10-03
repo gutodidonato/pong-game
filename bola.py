@@ -26,6 +26,12 @@ class Bola(Turtle):
         self.seth(lance)
         self.estado_de_lance = lance
         
+    def quicar(self):
+        estado_novo = 360 - self.estado_de_lance
+        self.corecao_lance(estado_novo)
+    
+    
+    
     def mover(self):
         self.penup()
         self.seth(self.estado_de_lance)

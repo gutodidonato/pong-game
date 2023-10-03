@@ -4,8 +4,7 @@ from bola import *
 
 def quicar_parede():
     tela.tracer(0)
-    estado_novo = 360 - bola.estado_de_lance
-    bola.corecao_lance(estado_novo)
+    bola.quicar()
     bola.mover()
     tela.update()
     tela.tracer(1)
