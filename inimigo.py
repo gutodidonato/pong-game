@@ -1,9 +1,8 @@
 from jogador import *
 
 VELOCIDADE = 20
-TAMANHO = 300
 POSICAO_X = 350
-CORPO_INICIAL = [(POSICAO_X,40),(POSICAO_X,20),(POSICAO_X,0),(POSICAO_X,-20),(POSICAO_X,-40)]
+COMPUTADOR_POSICAO_INICIAL = (POSICAO_X, 0)
 
 
 class Computador(Jogador):
@@ -11,6 +10,9 @@ class Computador(Jogador):
     def __init__(self):
         super().__init__()
         self.dificuldade = 1
+        self.posicaoAtual = 0
+        self.posicaoX = POSICAO_X
+        self.criar_jogador(COMPUTADOR_POSICAO_INICIAL)
         
 
         

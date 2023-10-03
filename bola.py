@@ -29,6 +29,11 @@ class Bola(Turtle):
     def quicar(self):
         estado_novo = 360 - self.estado_de_lance
         self.corecao_lance(estado_novo)
+        
+    def quicar_jogador(self):
+        imperfeicao = r.randint(0, 30)
+        estado_novo = self.estado_de_lance - 180 + imperfeicao
+        self.corecao_lance(estado_novo)
     
     
     
